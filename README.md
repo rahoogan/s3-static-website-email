@@ -39,6 +39,7 @@ The following variables will be output when the module is run:
 ## Example 
 A simple example of how to use the module in a `main.tf` file is shown below. This example uses the Send API Provided by Mailjet. **Note**: All variable values have been contrived and are not real.
 
+```
 module "static-website-email" {
     source = "github.com/rahoogan/s3-static-website-email"
     aws_account_id = "760938983754"
@@ -61,3 +62,4 @@ output "api_root_id" {
 output "api_prod_url" {
     value = "${module.static-website-email.api_prod_url}"
 }
+```
