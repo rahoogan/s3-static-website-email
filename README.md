@@ -63,3 +63,7 @@ output "api_prod_url" {
     value = "${module.static-website-email.api_prod_url}"
 }
 ```
+
+## License
+Licensed under the [MIT License](https://github.com/rahoogan/s3-static-website-email/blob/master/LICENSE)
+
